@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+}
+.weather {
+  background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+  /* background: linear-gradient(to left#8A7968,#6F5E53); */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 60px 550px 0px;
+  border-radius: 20px;
+  padding: 0px 25px 0px;
+}
+.step1 {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 40px 0px;
+  border-radius: 30px;
+  padding: 10px 40px 10px;
+}
+.step1 input {
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0px 10px 0px;
+  padding-left: 25px;
+}
+.step1 button {
+  background-color: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  display: cover;
+  width: 55px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.step1 img {
+  background-size: cover;
+  height: 30px;
+}
+.weather-icon {
+  background-size: cover;
+}
+.step2 {
+  color: white;
+  margin: 20px 20px;
+}
+h1 {
+  font-weight: 900;
+  font-size: 50px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+.step3 {
+  position: relative;
+  margin: auto auto 20px;
+  text-align: center;
+}
+.step5 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 120px;
+  padding-left: 300px;
+}
+.step6 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 120px;
+}
+.humidity-text {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  color: black;
+}
+.wind-text {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}

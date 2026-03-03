@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background :linear-gradient(to right,#2D1115,#65334D,#934683);
+}
+.main{
+    margin-top: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    border: none;
+ outline: none;
+ cursor: pointer;
+ padding: 10px 15px 10px;
+ border-radius: 10px;
+ font-size: larger; 
+ margin-bottom: 20px;
+
+}
+button:hover{
+    background-color: antiquewhite;
+    outline: #2D1115;
+    border: #2D1115 2 solid;
+}
+p{
+    color: white;
+    font-size: x-large;
+}

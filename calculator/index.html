@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="div0">
+            <input type="text" id="display">
+        </div>
+        <div class="div1">
+            <input type="button" value="AC" id="clearDisplay">
+            <input type="button" value="DE" id="delete">
+            <input type="button" value="." id="point">
+            <input type="button" value="/" id="division">
+        </div>
+        <div class="div2">
+            <input type="button" value="7" id="7value">
+            <input type="button" value="8" id="8value">
+            <input type="button" value="9" id="9value">
+            <input type="button" value="*" id="multiplication">
+        </div>
+        <div class="div3">
+            <input type="button" value="4" id="4value">
+            <input type="button" value="5" id="5value">
+            <input type="button" value="6" id="6value">
+            <input type="button" value="-" id="substraction">
+        </div>
+        <div class="div4">
+            <input value="1" type="button" id="1value">
+            <input type="button" value="2" id="2value">
+            <input type="button" value="3" id="3value">
+            <input type="button" value="+" id="add">
+        </div>
+        <div class="div5">
+            <input type="button" value="00" id="00value">
+            <input type="button" value="0" id="0value">
+            <input type="button" value="=" id="equal">
+        </div>
+    </div>
+    <script>
+        //Creating the display button
+        let displayButton = document.getElementById("display");
+        document.getElementById("clearDisplay").addEventListener("click", function () {
+            document.getElementById("display").value = " ";
+            console.log("hello binay ");
+
+        });
+        //Creating the Delete button
+        document.getElementById("delete").addEventListener("click", function () {
+            let displayUpdatedValue = displayButton.value.toString().slice(0, -1);
+            displayButton.value = `${displayUpdatedValue}`
+
+        });
+        //creating the decimal point button
+        document.getElementById("point").addEventListener("click", function () {
+
+            displayButton.value += ".";
+        });
+        // creating the division button
+        document.getElementById("division").addEventListener("click", function () {
+
+            displayButton.value += "/";
+        });
+        // creating the 7th number button
+        document.getElementById("7value").addEventListener("click", function () {
+
+            displayButton.value += "7";
+        });
+        // creating the 8th value button
+        document.getElementById("8value").addEventListener("click", function () {
+
+            displayButton.value += "8";
+        });
+        // creating the 9value button
+        document.getElementById("9value").addEventListener("click", function () {
+
+            displayButton.value += "9";
+        });
+        // creating the multiplication button
+        document.getElementById("multiplication").addEventListener("click", function () {
+
+            displayButton.value += "*";
+        });
+        // creating the 4value button
+        document.getElementById("4value").addEventListener("click", function () {
+
+            displayButton.value += "4";
+        });
+        // creating the 5value button
+        document.getElementById("5value").addEventListener("click", function () {
+
+            displayButton.value += "5";
+        });
+        // creating the 6value button
+        document.getElementById("6value").addEventListener("click", function () {
+
+            displayButton.value += "6";
+        });
+        // creating the substraction button
+        document.getElementById("substraction").addEventListener("click", function () {
+
+            displayButton.value += "-";
+        });
+        // creating the 1value button
+        document.getElementById("1value").addEventListener("click", function () {
+
+            displayButton.value += "1";
+        });
+        // creating the 2value button
+        document.getElementById("2value").addEventListener("click", function () {
+
+            displayButton.value += "2";
+        });
+        // creating the 3value button
+        document.getElementById("3value").addEventListener("click", function () {
+
+            displayButton.value += "3";
+        });
+        // creating the addittion button
+        document.getElementById("add").addEventListener("click", function () {
+
+            displayButton.value += "+";
+        });
+        // creating the 00value button
+        document.getElementById("00value").addEventListener("click", function () {
+
+            displayButton.value += "00";
+        });
+        // creating the 0value button
+        document.getElementById("0value").addEventListener("click", function () {
+
+            displayButton.value += "0";
+        });
+        // creating the equal button
+        document.getElementById("equal").addEventListener("click", function () {
+            const equalValue = new Function(`return ${displayButton.value}`)
+            const result = equalValue();
+            displayButton.value = `${result}`;
+            // displayButton = "eval(displaybutton.value)"
+            console.log("hello");
+
+        });
+
+    </script>
+</body>
+
+</html>

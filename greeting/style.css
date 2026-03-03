@@ -1,0 +1,53 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hidebutton {
+  visibility: hidden;
+}
+#greetButton {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 20px 10px;
+  box-shadow: 5px 10px 5px gray;
+  border-radius: 10px;
+  margin-top: 45vh;
+}
+.popMsg {
+  position: absolute;
+  top: 0px;
+  transform: scale(0.1);
+  visibility: hidden;
+  padding: 10px 15px 10px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  box-shadow: 10px 15px 10px gray;
+}
+#submitButton {
+  border: none;
+  outline: none;
+  background-color: black;
+  color: aliceblue;
+  padding: 5px 15px 5px;
+  border-radius: 15px;
+  margin-top: 5px;
+  box-shadow: 5px 10px 5px gray;
+}
+.pop-msg {
+  transition: 0.4s ease-in-out;
+  visibility: visible;
+  position: absolute;
+  top: 300px;
+  transform: scale(1.2);
+}

@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Dark theme background */
+    font-family: 'Roboto', sans-serif; /* Modern, clean font */
+    color: #e0e0e0; /* Light text color for readability */
+}
+
+.todolist {
+    background: linear-gradient(135deg, #ffcc00, #ff6600); /* Gradient background */
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Deeper shadow for depth */
+    animation: fadeIn 0.5s ease; /* Fade in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Start above */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* End in place */
+    }
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.todo h1 {
+    color: #fff; /* White title */
+    font-size: 28px; /* Larger font for emphasis */
+    font-weight: 700; /* Bold title */
+}
+
+.todo img {
+    width: 50px; /* Slightly larger image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for image */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for image */
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1f1f1f; /* Darker background for task input */
+    border-radius: 10px; /* Softer corners */
+    padding: 15px 20px; /* Consistent padding */
+    margin-top: 20px; /* Space above task section */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.task input {
+    flex: 1;
+    background-color: #2a2a2a; /* Dark input field */
+    border: 1px solid #444; /* Subtle border */
+    border-radius: 5px;
+    height: 45px; /* Slightly taller input */
+    padding: 0 15px; /* Padding for input */
+    font-size: 16px;
+    color: #fff; /* White text in input */
+    transition: border 0.3s; /* Transition for border color */
+}
+
+.task input:focus {
+    border-color: #ffcc00; /* Highlight border on focus */
+    outline: none; /* Remove outline */
+}
+
+.task button {
+    background-color: #ff6600; /* Button color */
+    border: none;
+    border-radius: 5px;
+    height: 45px; /* Consistent height */
+    padding: 0 20px; /* Padding inside button */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+.task button:hover {
+    background-color: #e65c00; /* Darker on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #1f1f1f; /* Dark background for list items */
+    margin: 15px 0; /* Spacing between items */
+    padding: 15px; /* Padding for items */
+    border-radius: 10px; /* Rounded corners */
+    position: relative;
+    font-size: 20px; /* Slightly smaller font */
+    display: flex; /* Flex layout for items */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and delete */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+    opacity: 0; /* Start hidden for animation */
+    animation: slideIn 0.3s forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px); /* Start below */
+        opacity: 0; /* Start hidden */
+    }
+    to {
+        transform: translateY(0); /* End in place */
+        opacity: 1; /* End visible */
+    }
+}
+
+ul li:hover {
+    background-color: #333; /* Change background on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+ul li.checked {
+    color: #ffcc00; /* Highlight color for completed tasks */
+    text-decoration: line-through; /* Strikethrough for completed */
+    transition: color 0.3s; /* Smooth transition for color */
+}
+
+ul li span {
+    background-color: #ff3d00; /* Delete button color */
+    color: white; /* White text */
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px; /* Center text vertically */
+    border-radius: 50%; /* Circular delete button */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+ul li span:hover {
+    background-color: #e63900; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly larger on hover */
+}

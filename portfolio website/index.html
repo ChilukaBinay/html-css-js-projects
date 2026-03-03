@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f144271f99.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="error" class="logo">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="headerText">
+            <p>Full Stack Web Developer</p>
+            <h1>Hi, i'm <span>Binay</span> <br>Chiluka from India</h1>
+        </div>
+        <!-- -------about------- -->
+        <div id="about">
+            <div class="row">
+                <div class="about-col-1"><img src="images/user.png" alt=""></div>
+                <div class="about-col-2">
+                    <h1 id="subTitle">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto molestiae commodi repellat Lorem
+                        ipsum dolor sit amet consectetur, adipisicing elit. Et, pariatur laborum quidem quibusdam,
+                        voluptatem recusandae esse ipsa quia molestiae facere quos! Dolores inventore quas amet
+                        distinctio ab, officiis expedita iste Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Odit id quae sapiente, sint tempora, molestiae quasi impedit minima dolorum distinctio
+                        reiciendis hic error deleniti placeat veniam ipsa doloribus aut veritatis.
+                        necessitatibus, doloribus ullam maxime exercitationem beatae rem rerum facere asperiores illum
+                        totam, illo voluptate, tempora esse? Molestiae.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills',event)">Skills</p>
+                        <p class="tab-links" onclick="openTab('Experience',event)">Experience</p>
+                        <p class="tab-links" onclick="openTab('Education',event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Development</span>
+                                <br>web app Development
+                            </li>
+                            <li>
+                                <span>Python</span>
+                                <br>Python Development
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span>Web Developer</span>
+                                <br>web app Development
+                            </li>
+                            <li>
+                                <span>Python</span>
+                                <br>Python Development
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li>
+                                <span> bnn</span>
+                                <br>web app Development
+                            </li>
+                            <li>
+                                <span>Python</span>
+                                <br>Python Development
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- ------------------services--------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 id="subTitle">My services</h1>
+
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-xmark"></i>
+                        <h1>web Developer</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in eius, architecto illum
+                            maiores excepturi quibusdam aut rerum praesentium voluptatem. Laudantium consequatur
+                        </p>
+                        <a href="#">Learn more about</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-hashtag"></i>
+                        <h1>web Developer</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in eius, architecto illum
+                            maiores excepturi quibusdam aut rerum praesentium voluptatem. Laudantium consequatur
+                        </p>
+                        <a href="#">Learn more about</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <h1>web Developer</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad in eius, architecto illum
+                            maiores excepturi quibusdam aut rerum praesentium voluptatem. Laudantium consequatur
+                        </p>
+                        <a href="#">Learn more about</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- -------------mywork---------------- -->
+        <div id="myWork">
+            <div class="container">
+                <h1 id="subTitle">My Work</h1>
+                <div class="workList">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="Error">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="Error">
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="Error">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

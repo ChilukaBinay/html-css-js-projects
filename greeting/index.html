@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Greeting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <button id="greetButton">Click me!</button>
+        <div class="popMsg">
+            <h1>Hello</h1>
+            <p>Thank you for clicking!</p>
+            <button id="submitButton">submit</button>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.querySelector(".popMsg");
+        let button = document.getElementById("greetButton");
+        button.addEventListener("click", function () {
+            popup.classList.add("pop-msg");
+            button.classList.add("hidebutton");
+        })
+        let submit = document.getElementById("submitButton");
+        submit.addEventListener("click", function () {
+            popup.classList.remove("pop-msg");
+            button.classList.remove("hidebutton");
+        })
+    </script>
+</body>
+
+</html>

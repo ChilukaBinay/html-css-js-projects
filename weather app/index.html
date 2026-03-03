@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="weather">
+        <div class="step1">
+            <input type="text" placeholder="Enter the city name" spellcheck="true" id="input-value">
+            <button id="search-button"><img src="search.png" alt="Loading error"></button>
+        </div>
+        <div class="step2">
+            <img src="clouds.png" alt="Loading error" class="weather-icon" id=" weatherIcon">
+            <h1 id="Degree">1<sup>o</sup>C</h1>
+            <h2 id="CityName">City</h2>
+        </div>
+        <div class="details">
+
+            <div class="step3">
+                <div class="step5">
+                    <img src="humidity.png" alt="Loading error">
+                    <div class="humidity-text">
+                        <p id="humidity">Degree</p>
+                        <p>humidity</p>
+                    </div>
+
+                </div>
+                <div class="step6">
+                    <img src="wind.png" alt="Loading error">
+                    <div class="wind-text">
+                        <p id="windSpeed">Degree</p>
+                        <p>Wind Speed</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
